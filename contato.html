@@ -1,0 +1,127 @@
+<html lang="pt-br">
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Contato</title>
+    <link rel="stylesheet"href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/45419242ef.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+  
+    
+<section class="header">
+  <nav>
+
+    <div data-aos="fade-down"
+    data-aos-duration="1500">
+
+    <a href="index.html"><img src="imagens/logo.png"></a>
+  </div>
+    <div class="nav-links" id="navLinks">
+      <i class="fas fa-times" onclick="hideMenu()"></i>
+      <div data-aos="fade-down"
+    data-aos-duration="1500">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="sobre.html">SOBRE</a></li>
+        <li><a href="filmes.html">FILMES</a></li>
+        <li><a href="contact.html">CONTATO</a></li>
+      </ul>
+      </div>
+
+    </div>
+    <i class="fas fa-bars" onclick="showMenu()"></i>
+  </nav>
+  <div class="text-box">
+    <div data-aos="fade-down"
+    data-aos-duration="1500">
+    <h1>CONTATO</h1>
+    </div>
+    </div>
+
+</section>
+
+
+<!-----Sobre nós------>
+
+<div data-aos="fade-down"
+    data-aos-duration="1500">
+
+<div class="location">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.992077140757!2d-46.87318368440799!3d-23.496794865097538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf03c9ce9c6f0b%3A0x525f3b214d6912fa!2sAv.%20Sebasti%C3%A3o%20Davino%20dos%20R%C3%A9is%2C%20672%20-%20Vila%20Porto%2C%20Barueri%20-%20SP%2C%2006414-007!5e0!3m2!1spt-BR!2sbr!4v1634751890833!5m2!1spt-BR!2sbr" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</div>
+
+<section class="contact-us">
+
+    <div class="row">
+       
+        <div class="contact-col">
+          <form action="form-handler.php" method="post" data-netlify="true">
+            <input type="text"name="Nome"placeholder="Nome"required>
+            <input type="email"name="Email"placeholder=" Email"required>
+            <input type="text" name="Telefone"placeholder="Telefone"required>
+            <input type="text"name="Empresa"placeholder=" Empresa"required>
+            <textarea rows="5"name="Mensagem" placeholder="Mensagem" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Enviar mensagem</button>
+        </form>
+
+        </div>
+    </div>
+
+</section>
+</div>
+
+    
+</div>
+
+<!-----Footer------>
+
+<section class="footer">
+    <h4>Sobre nós</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque accusantium voluptatem ipsam minima recusandae blanditiis expedita?<br> Id, quae. Ducimus, amet sunt quam asperiores eos quis blanditiis repellat ullam? Odio, fugiat?</p>
+    <div class="icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fas fa-phone-alt"></i>
+      <i class="fas fa-envelope"></i>
+    </div>
+    <p>Feito por Destec <i class="fas fa-fill-drip"></i></p>
+  </section>
+  
+  <!------JavaScript for Toggle Menu ----->
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <script>
+  var navLinks=document.getElementById("navLinks");
+  
+  function showMenu(){
+    navLinks.style.right="0";
+  }
+  function hideMenu(){
+    navLinks.style.right="-200px";
+  }
+  </script>
+
+<script>
+  var loader= document.getElementById("preloader");
+  window.addEventListener("load",function(){
+    loader.style.display="none"
+  })
+</script>
+
+<script>
+  AOS.init();
+</script>
+
+  </body>
+  
+  </html>

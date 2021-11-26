@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>FILMSEC</title>
+    <link rel="stylesheet"href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/45419242ef.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+   
+
+
+<section class="header">
+  <nav>
+    <div data-aos="fade-down"
+    data-aos-duration="1500">
+    <a href="index.html"><img src="imagens/logo.png"></a>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <i class="fas fa-times" onclick="hideMenu()"></i>
+
+      <div data-aos="fade-down"
+    
+     data-aos-duration="1100">
+
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="quem-somos.html">SOBRE</a></li>
+        <li><a href="filmes.html">FILMES</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+      </ul>
+
+      </div>
+    </div>
+    <i class="fas fa-bars" onclick="showMenu()"></i>
+  </nav>
+
+ 
+  <div class="text-box" >
+
+
+    <div data-aos="fade-down"
+     data-aos-duration="1500">
+      <h1>FILMSEC</h1> 
+    
+<p>As melhores salas de cinema retrô de todo Brasil, com o conforto de sua casa <br> Com as poltronas mais Confortáveis e as pipocas mais gostosas, tudo isso com o melhor preço da região </p>
+<a href="filmes.html"class="hero-btn">Veja os Filmes em Cartaz</a>
+</div>
+  </div>
+
+</section>
+
+<!-----serviços------>
+
+<div data-aos="fade-down"
+data-aos-duration="1500">
+
+
+<section class="servicos">
+  <h1>Filmes em Cartaz</h1>
+ 
+
+<div class="row">
+<div class="servicos-col">
+  <a href="filmes.html#acao">
+<h3> Filmes de ação</h3>
+<img src="./imagens/categoria_ação.jpg" alt="">
+</a>
+</div>
+
+
+  <div class="servicos-col">
+    <a href="filmes.html#cult">
+  <h3> Filmes Cult </h3>
+  <img src="./imagens/categoria_cult.jpg" alt="">
+  </a>
+</div>
+
+
+  
+  </div>
+
+  <div class="row">
+    
+    <div class="servicos-col">
+      <a href="filmes.html#nacionais">
+    <h3> Filmes Nacionais</h3>
+    <img src="./imagens/categoria_nacionais.png" alt="">
+    </a>
+    
+    </div>
+    
+    
+      <div class="servicos-col">
+        <a href="filmes.html#pop">
+      <h3> Filmes da Cultura Pop</h3>
+      <img src="./imagens/categoria_pop.jpg" alt="">
+    </a>
+    
+    </div>
+
+
+</section>
+
+
+<!-----Opiniões de contratantes------>
+
+
+
+
+
+<!-----call to action------>
+
+<div data-aos="fade-down"
+data-aos-duration="1500">
+<section class="cta">
+  <h1>Não perca tempo e compre agora o seu ingresso<br> E venha logo com sua família e amigos</h1>
+  <a href="contato.html" class="hero-btn">FALE CONOSCO</a>
+</section>
+
+</div>
+
+
+
+<!-----Footer------>
+
+<section class="footer">
+  <h4>Sobre nós</h4>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque accusantium voluptatem ipsam minima recusandae blanditiis expedita?<br> Id, quae. Ducimus, amet sunt quam asperiores eos quis blanditiis repellat ullam? Odio, fugiat?</p>
+  <div class="icons">
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fas fa-phone-alt"></i>
+    <i class="fas fa-envelope"></i>
+  </div>
+  <p>Feito por Destec <i class="fas fa-fill-drip"></i></p>
+</section>
+
+</div>
+
+
+
+<!------JavaScript for Toggle Menu ----->
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<script>
+var navLinks=document.getElementById("navLinks");
+
+function showMenu(){
+  navLinks.style.right="0";
+}
+function hideMenu(){
+  navLinks.style.right="-200px";
+}
+</script>
+
+<script>
+  var loader= document.getElementById("preloader");
+  window.addEventListener("load",function(){
+    loader.style.display="none"
+  })
+</script>
+
+<script>
+  AOS.init();
+</script>
+</body>
+
+</html>
